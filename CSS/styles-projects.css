@@ -1,0 +1,43 @@
+.MT13-banner {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que el contenedor tenga el mismo ancho que el contenedor principal */
+    max-width: 800px; /* Asegura que el contenedor no sea más grande que el máximo ancho permitido */
+    height: 200px; /* Ajusta la altura según sea necesario */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: -8%;
+}
+.MT13-banner img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    top: 1% ;
+}
+
+.tecnologias {
+    position: absolute; /* Posiciona los iconos sobre la imagen */
+    top: 33%; /* Ajusta la posición vertical de los iconos para estar sobre la imagen */
+    left: 19%; /* Centra los iconos horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para centrar */
+    display: flex; /* Muestra los iconos en fila */
+    gap: 10px; /* Espacio entre los iconos */
+    z-index: 2; /* Asegura que los iconos estén sobre la imagen */
+}
+
+.tecnologias img {
+    width: 48px; /* Ajusta el ancho de los iconos */
+    height: auto; /* Mantiene la proporción de los iconos */
+    cursor: pointer;
+}
+.tecnologias img {
+    width: 48px; /* Ajusta el ancho de los iconos */
+    height: auto; /* Mantiene la proporción de los iconos */
+    transition: transform 0.3s ease; /* Añade una transición suave al transform */
+}
+
+.tecnologias img:hover {
+    transform: scale(1.2); /* Agranda el icono al 120% de su tamaño original */
+}

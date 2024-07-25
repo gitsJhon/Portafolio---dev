@@ -1,0 +1,18 @@
+body {
+    color: #fff;
+    overflow-y: hidden;
+    padding-left: 1%; /* Ajusta el valor según sea necesario */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total del elemento */
+}
+
+body p{
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+}
+body h2{
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+}
+.titl-about{
+    text-align: center;
+}

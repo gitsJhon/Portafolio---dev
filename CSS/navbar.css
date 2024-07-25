@@ -1,0 +1,73 @@
+/* Estilos para el contenedor del menú de navegación */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center;
+    background: #333;
+    padding: 20px 15px;
+    border-radius: 12px;
+    border-bottom-color: #fff ;
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilos para los elementos de la lista del menú de navegación */
+.nav-links li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+/* Estilos para los enlaces del menú de navegación */
+.nav-links li a {
+    position: relative;
+    color: #fff; /* Cambiar el color de la letra a blanco */
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+    text-shadow: none; /* Eliminar cualquier sombra de texto */
+}
+
+/* Estilos para el efecto hover en los enlaces del menú de navegación */
+.nav-links li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #ff0000;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+    width: 100%;
+}
+
+.nav-links li.center a:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before {
+    width: 100%;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.nav-links li.upward a:hover:before {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.nav-links li.forward a:before {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.nav-links li.forward a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
