@@ -1,43 +1,57 @@
-.MT13-banner {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100%; /* Asegura que el contenedor tenga el mismo ancho que el contenedor principal */
-    max-width: 800px; /* Asegura que el contenedor no sea más grande que el máximo ancho permitido */
-    height: 200px; /* Ajusta la altura según sea necesario */
-    margin: 0 auto; /* Centra el contenedor */
-    margin-top: -8%;
+body{
+    color: white;
 }
-.MT13-banner img {
-    width: 100%; /* Asegura que la imagen ocupe todo el espacio del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px;
-    z-index: 1;
+
+.carousel-container {
     position: relative;
-    top: 1% ;
+    overflow: hidden;
+    width: 800px; /* Set the width of the carousel */
+    height: 600px; /* Set the height of the carousel */
 }
 
-.tecnologias {
-    position: absolute; /* Posiciona los iconos sobre la imagen */
-    top: 33%; /* Ajusta la posición vertical de los iconos para estar sobre la imagen */
-    left: 19%; /* Centra los iconos horizontalmente */
-    transform: translateX(-50%); /* Ajusta la posición para centrar */
-    display: flex; /* Muestra los iconos en fila */
-    gap: 10px; /* Espacio entre los iconos */
-    z-index: 2; /* Asegura que los iconos estén sobre la imagen */
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
-.tecnologias img {
-    width: 48px; /* Ajusta el ancho de los iconos */
-    height: auto; /* Mantiene la proporción de los iconos */
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
-.tecnologias img {
-    width: 48px; /* Ajusta el ancho de los iconos */
-    height: auto; /* Mantiene la proporción de los iconos */
-    transition: transform 0.3s ease; /* Añade una transición suave al transform */
+
+.prev:hover, .next:hover {
+    transform: scale(1.1); /* Escala el elemento un 10% más grande */
+    transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
-.tecnologias img:hover {
-    transform: scale(1.2); /* Agranda el icono al 120% de su tamaño original */
+
+.imagen-boton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-boton img {
+    width: 30px;
+    height: 30px;
 }
