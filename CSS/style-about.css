@@ -13,6 +13,23 @@ body h2{
     font-family: "Lato", sans-serif;
     font-style: italic;
 }
+.flechas{
+    padding-top: -1%;
+}
 .titl-about{
     text-align: center;
+}
+.imagen-boton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.imagen-boton img {
+    display: block;
+}
+
+.imagen-boton:focus {
+    outline: none;
 }
