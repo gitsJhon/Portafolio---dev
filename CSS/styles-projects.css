@@ -3,10 +3,14 @@ body{
 }
 
 .carousel-container {
+    border-radius: 10px;
+    border-bottom: 10px;
+    background-color: #333 - 5;
     position: relative;
     overflow: hidden;
-    width: 800px; /* Set the width of the carousel */
-    height: 600px; /* Set the height of the carousel */
+    width: 100%;
+    max-width: 100%;
+    height: 1100px; /* Set the height of the carousel */
 }
 
 .carousel-item {
@@ -22,6 +26,12 @@ body{
     display: block;
 }
 
+.carousel-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    scrolling: no;
+}
 .carousel-nav {
     position: absolute;
     bottom: 0;
